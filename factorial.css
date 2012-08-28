@@ -1,0 +1,195 @@
+#f_modal {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position:fixed;
+  z-index: 1000;
+}
+
+#f_modal .f_box {
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 290px;
+  margin-left: -200px;
+  margin-top: -145px;
+  position: absolute;
+  border-radius: 4px;
+  border: 1px #fff solid;
+  background-image: -webkit-linear-gradient(bottom, #333 0%, #555 100%);
+  overflow:hidden;
+  box-shadow: 10px 10px 100px 1px rgba(0,0,0,0.7);
+}
+#f_modal .f_title {
+  position: absolute;
+  line-height:40px;
+  width: 20px;
+  height: 40px;
+  right: 20px;
+  bottom: 3px;
+}
+
+#f_modal .f_title:hover {
+   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff; 
+}
+
+#f_modal #f_bang, #f_modal #f_f {
+  font-family: Georgia;
+  font-size: 26px;
+  color: rgba(255,255,255,0.6);
+  text-shadow: 0px 1px rgba(0,0,0,0.7)
+}
+
+#f_modal #f_act {
+  font-size:24px;
+  position:relative;
+  top: -2px;
+  left: 0px;
+  font-family: Georgia;
+  color: #111;
+  text-shadow: 0px 1px rgba(255,255,255,0.1)      
+}
+
+#f_modal #f_f {
+  position:relative;
+  left: 14px;
+  top: 0px;
+}
+
+#f_modal #f_bang {
+  position:relative;
+  left: -5px;
+  top: 4px;
+}
+#f_modal .f_input, #f_modal .f_more {
+  background-color:#1D1840;
+  border-radius: 4px;
+}
+  
+#f_modal .f_input input {
+  margin: 6px;
+  width: 386px;
+  font-size: 24px;
+  background-color:rgba(0,0,0,0.0);
+  border: 1px rgba(255,255,255,0.1) solid;
+  color: rgba(255,255,255,0.8);
+  padding: 6px;
+}
+#f_modal .f_more {
+  height: 196px;
+  overflow: hidden; 
+  border-radius: 4px;
+}
+
+#f_modal .f_more-inner {
+  height: 220px;
+  overflow: scroll;
+  
+  border-radius: 4px;
+}
+
+#f_modal .f_more ul, .f_more li {
+  border-radius: 4px 0 0 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#f_modal .f_more ul {
+  padding: 1px;
+}
+
+#f_modal .f_more li {
+  margin: 1px 0 2px 1px;
+  background-color: rgba(106, 81, 140, 0.4);
+  line-height: 40px;
+  padding: 0 10px;
+  color: rgba(255,255,255,0.8);
+  cursor: hand;
+}
+#f_modal .f_more li a {
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+
+#f_modal .f_more li a .f_matching {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}
+
+#f_modal .f_more li.f_selected {
+  background-color: rgba(169, 121, 217, 0.9);
+  color:#333;
+}
+
+#f_modal .f_more li.f_selected:hover {
+  background-color: rgba(169, 121, 217, 1);
+}
+
+#f_modal .f_more li:hover {
+  background-color: rgba(169, 121, 217, 0.4);
+  color:#333;
+}
+
+.f_overlay {
+  background-color: rgba(0, 255, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 99;
+}
+
+.f_overlay.f_unselectable {
+  pointer-events:none;
+}
+
+.f_overlay.f_implied {
+  background-color: rgba(255, 255, 0, 0.1);
+  cursor: default;
+}
+
+.f_overlay.f_warn {
+  background-color: rgba(255, 255, 0, 0.1);
+  cursor: default;
+}
+
+.f_overlay.f_error {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.f_overlay a.f_close:hover {
+  background-color: #666;
+}
+
+.f_overlay a.f_close:hover {
+  background-color: #666;
+}
+
+a.f_close{
+  opacity: 0.2;
+  z-index: 999;
+  position: absolute;
+  margin-left: -22px;
+  text-decoration: none;
+  font-family: Helvetica;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: #333;
+  box-shadow: -1px 1px 1px 0px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-shadow:  -1px 1px 0px rgba(0, 0, 0, 0.4);;
+  display:block;
+  border: 1px #999 solid;
+  border-radius: 4px;
+
+  cursor: hand;
+}
+
+.f_overlay.f_active {
+  background-color: rgba(0, 255, 0, 0.4);
+  z-index: 998;
+}

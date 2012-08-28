@@ -1,0 +1,16 @@
+{
+  // Required
+  "name": "factorial",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "icons/small.png",
+    "default_title": "Edit with factorial"
+  },
+  // Add any of these that you need
+  "offline_enabled": true,
+  "permissions": [
+    "clipboardRead", "clipboardWrite", "unlimitedStorage", "tabs", "http://*/*"
+  ],
+  "background": {"scripts": ["background.js"]}
+}
